@@ -1,0 +1,399 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  {# <link href="{% static 'assets/img/favicon.png' %}" rel="icon"> #}
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <script>
+    function getCookie(name) {
+      let cookieValue = null;
+      if (document.cookie && document.cookie !== '') {
+          const cookies = document.cookie.split(';');
+          for (let i = 0; i < cookies.length; i++) {
+              const cookie = cookies[i].trim();
+              // Does this cookie string begin with the name we want?
+              if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                  cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                  break;
+              }
+          }
+      }
+      return cookieValue;
+    }
+  </script>
+ 
+</head>
+
+<body id="page-top">
+
+  <!-- ======= Header/ Navbar ======= -->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">Portfolio</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= Intro Section ======= -->
+  <div id="home" class="intro route bg-image" style="background-image: url({% static 'assets/img/intro-bg.jpg' %})">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">I am Kyaw Htet</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">CEO KOT,Web Developer,Web Designer,Frontend Developer,Backend Designer</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Intro Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="{% static 'assets/img/testimonial-2.jpg' %}" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Morgan Freeman</span></p>
+                        <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
+                        <p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
+                        <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skill</p>
+                    <span>HTML</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CSS3</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PYTHON</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Django</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
+                      imperdiet et, porttitor
+                      at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
+                      porttitor accumsan tincidunt.
+                    </p>
+                    <p class="lead">
+                      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
+                      porttitor volutpat. Vestibulum
+                      ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                    </p>
+                    <p class="lead">
+                      Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                      Nulla porttitor accumsan
+                      tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+   
+
+    <!-- ======= Contact Section ======= -->
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url("{% static 'assets/img/overlay-bg.jpg' %}")">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        Send Message Us
+                      </h5>
+                    </div>
+                    <div>
+                      
+                      <form action="/contact_us" autocomplete="off" method="POST" role="form" class="p-2" id="contact_form">
+                        {% csrf_token %}
+
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                              <div class="validate"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                              <div class="validate"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <div class="validate"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                              <div class="validate"></div>
+                            </div>
+                          </div>
+                         <div class="col-md-12 text-center mb-3">
+                            {# <div class="loading">Loading</div> #}
+                            <div class="error-message"></div>
+                            <div class="sent-message"></div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="button button-a button-big button-rouded" id="send_to">                              
+                              Send Message
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
+                        expedita aperiam aliquid at.
+                        Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
+                        mollitia inventore?
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
+                        <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
+                        <li><span class="ion-email"></span> contact@example.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>KOT</strong>. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/counterup/jquery.counterup.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
+
+<script>
+  // Wait for the DOM to be ready
+$(function() {
+  // Initialize form validation on the registration form.
+  // It has the name attribute "registration"
+  $("#contact_form").validate({
+    // Specify validation rules
+    rules: {
+      // The key name on the left side is the name attribute
+      // of an input field. Validation rules are defined
+      // on the right side
+      name: "required",
+      subject: "required",
+      message: "required",
+      email: {
+        required: true,
+        // Specify that email should be validated
+        // by the built-in "email" rule
+        email: true
+      }
+    },
+    // Specify validation error messages
+    messages: {
+      name: "Please enter your name",
+      subject: "Please enter your subject",
+      message: "Please enter your message",
+      email: "Please enter a valid email address"
+    },
+    errorElement: "em",
+
+    errorPlacement: function ( error, element ) {
+        // Add the `invalid-feedback` class to the error element
+        error.addClass( "invalid-feedback" );
+        error.insertAfter(element.next(".validate"));
+    },
+    highlight: function ( element, errorClass, validClass ) {
+        $( element ).addClass( "is-invalid" ).removeClass( "is-valid" );
+    },
+    unhighlight: function (element, errorClass, validClass) {
+        $( element ).addClass( "is-valid" ).removeClass( "is-invalid" );
+    },
+    // Make sure the form is submitted to the destination defined
+    // in the "action" attribute of the form when valid
+    submitHandler: function(form) {
+
+
+      var send_btn = $('#send_to')
+      send_btn.prop('disabled', true)
+      send_btn.html(`
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span class="sr-only">Loading...</span>
+      `)
+
+      $.ajax({
+        headers: {
+          'X-CSRFTOKEN': getCookie('csrftoken')
+        },
+        url: form.action,
+        type: 'POST',
+        data: $("#contact_form").serialize(),
+        success: function(data) {
+          if (data.status === false) {
+            // console.log($('input[name=' + data.invalid_field + ']')[0].classList.remove('is-valid'))
+            // $('input[name=' + data.invalid_field + ']')[0].classList.add('is-invalid')
+            // reset success message
+            $('.sent-message').html('')
+            // show error message
+            $('.error-message').html(`
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <strong>Hey!</strong> ${data.msg}.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            `)
+          }
+          else 
+          {
+            // reset error message
+            $('.error-message').html('')
+            // show success message
+            $('.sent-message').html(`
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              <strong>Hey!</strong> ${data.msg}.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            `)
+          }
+
+          send_btn.prop('disabled', false)
+          send_btn.html('Send')
+          console.log(data)
+        }
+      })
+
+    }
+  });
+});
+</script>
